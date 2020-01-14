@@ -1,0 +1,26 @@
+
+Post:
+
+http://localhost:8080/api/auth/signup
+{
+	"name" : "shalini",
+	"username" : "shalini",
+	"email": "shalini@gmail.com",
+	"password":"shalini"
+}
+
+http://localhost:8080/api/auth/signin
+
+{ 
+  "usernameOrEmail": "rajeev",
+  "password":"Secret"
+}
+
+Get:
+
+http://localhost:8080/data/1
+
+Content-Type application/json
+Authorization Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzIiwiaWF0IjoxNTc4OTg4Mjc0LCJleHAiOjE1Nzk1OTMwNzR9.e1wzNa6gCjcXuPaaLf9YgxaVyyIGqi6tT0sINdPTApv71B3jbvuNyRfb3R6gn6AuCZQ-hJdZFVUMat8PmLxxbA
+
+

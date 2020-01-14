@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 
 import com.muscle.studio.user.dto.UserRoleDto;
 @Repository
-public interface UsersRolesRepository extends CrudRepository<UserRoleDto,Integer> {
-	Optional<UserRoleDto> findById(Integer id);
+public interface UsersRolesRepository extends CrudRepository<UserRoleDto,Long> {
+	Optional<UserRoleDto> findById(Long id);
 }

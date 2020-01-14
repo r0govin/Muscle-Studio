@@ -26,7 +26,7 @@ public class UserController {
 	private UsersRolesRepository usersRolesRepository;
 	  
 	@GetMapping(path="/data/{id}",produces = "application/json")
-	  public String getData(@PathVariable("id") Integer id) {
+	  public String getData(@PathVariable("id") Long id) {
 		Optional<UserDto> userEntity = userRepository.findById(id);
 		Optional<RolesDto> roleDto	= rolesRepository.findById(id);
 		Optional<UserRoleDto> userRoleDto=usersRolesRepository.findById(id);
