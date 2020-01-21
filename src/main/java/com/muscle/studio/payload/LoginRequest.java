@@ -3,7 +3,7 @@ package com.muscle.studio.payload;
 import javax.validation.constraints.NotBlank;
 
 /**
- * Created by rajeevkumarsingh on 02/08/17.
+ *  author: Ravikiran
  */
 public class LoginRequest {
     @NotBlank

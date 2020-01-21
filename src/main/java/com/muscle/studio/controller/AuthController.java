@@ -26,6 +26,8 @@ import com.muscle.studio.user.dto.UserDto;
 import com.muscle.studio.user.repository.RolesRepository;
 import com.muscle.studio.user.repository.UserRepository;
 
+import io.swagger.annotations.ApiOperation;
+
 import javax.validation.Valid;
 import java.net.URI;
 import java.util.Collections;
@@ -65,6 +67,7 @@ public class AuthController {
         return ResponseEntity.ok(new JwtAuthenticationResponse(jwt));
     }
 
+    @ApiOperation(value= "sign up service", notes = "user sign up and details will be stored in db", response = ResponseEntity.class)
     @PostMapping("/signup")
     public ResponseEntity<?> registerUser(@Valid @RequestBody SignUpRequest signUpRequest) {
         if(userRepository.existsByUsername(signUpRequest.getUsername())) {

@@ -1,4 +1,7 @@
 
+Swagger:
+http://localhost:8080/swagger-ui.html#/
+
 Post:
 
 http://localhost:8080/api/auth/signup
